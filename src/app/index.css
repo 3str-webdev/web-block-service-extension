@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body,
+#root {
   min-width: 300px;
+  min-height: 250px;
   @apply bg-slate-50;
 }

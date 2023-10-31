@@ -3,9 +3,8 @@ import { ToggleBlockButton } from "@/features/toggle-block";
 import { ROUTES } from "@/shared/constants/routes";
 import { createTab } from "@/shared/lib/browser";
 import { ManageIcon, SignOutIcon } from "@/shared/uikit/icons";
-import { UiIconButton } from "@/shared/uikit/ui-incon-button";
+import { UiIconButton } from "@/shared/uikit/ui-icon-button";
 import { UiLogo } from "@/shared/uikit/ui-logo";
-import clsx from "clsx";
 
 export const HomePage = () => {
   const { data } = useSessionQuery();
@@ -33,7 +32,6 @@ export const HomePage = () => {
           </li>
           <li>
             <UiIconButton
-              onClick={handleManageClick}
               icon={<SignOutIcon className="text-rose-400 w-6 h-6" />}
             />
           </li>

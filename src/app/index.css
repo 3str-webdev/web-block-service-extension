@@ -4,4 +4,5 @@
 
 body {
   min-width: 300px;
+  @apply bg-slate-50;
 }

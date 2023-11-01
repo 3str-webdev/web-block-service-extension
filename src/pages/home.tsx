@@ -2,7 +2,7 @@ import { useSessionQuery } from "@/entities/session";
 import { ToggleBlockButton } from "@/features/toggle-block";
 import { ROUTES } from "@/shared/constants/routes";
 import { createTab } from "@/shared/lib/browser";
-import { ManageIcon, SignOutIcon } from "@/shared/uikit/icons";
+import { ManageIcon } from "@/shared/uikit/icons";
 import { UiIconButton } from "@/shared/uikit/ui-icon-button";
 import { UiLogo } from "@/shared/uikit/ui-logo";
 
@@ -29,11 +29,6 @@ export const HomePage = () => {
         <ul className="flex items-center justify-between">
           <li>
             <UiIconButton onClick={handleManageClick} icon={<ManageIcon />} />
-          </li>
-          <li>
-            <UiIconButton
-              icon={<SignOutIcon className="text-rose-400 w-6 h-6" />}
-            />
           </li>
         </ul>
       </footer>

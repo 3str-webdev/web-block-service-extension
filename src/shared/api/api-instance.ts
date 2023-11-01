@@ -34,7 +34,13 @@ export const createInstance = async <T>({
     throw new ApiError(response);
   }
 
-  return response.json();
+  const responseContent = await response.text();
+
+  if (responseContent) {
+    return JSON.parse(responseContent);
+  }
+
+  return {} as T;
 };
 
 export default createInstance;

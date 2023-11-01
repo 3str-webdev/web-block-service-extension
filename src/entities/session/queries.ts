@@ -1,10 +1,5 @@
-import {
-  authControllerGetSessionInfo,
-  authControllerSignOut,
-} from "@/shared/api/generated";
-import { ROUTES } from "@/shared/constants/routes";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import router from "next/router";
+import { authControllerGetSessionInfo } from "@/shared/api/generated";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 const sessionKey = ["session"];
 
